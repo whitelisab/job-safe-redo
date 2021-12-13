@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import Layout from '../components/layout';
-import { Container, Row, Card, Button } from 'react-bootstrap';
+import MyJobs from '../components/myjobs';
+import { Container } from 'react-bootstrap';
 
 const Home: NextPage = () => {
   return (
@@ -11,12 +11,7 @@ const Home: NextPage = () => {
         <title>Job Seeker Safe</title>
       </Head>
       <Container className="md-container">
-        <div>Job seeker safe home page</div>
-        <div>
-          <Link href="/jobboard">
-            <a>Click here for Job Board</a>
-          </Link>
-        </div>
+        <MyJobs />
       </Container>
     </Layout>
   );

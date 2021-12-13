@@ -20,7 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </Container>
       </Navbar>
       <Container className="md-container">{children}</Container>
-      <footer className="cntr-footer">Copyright © Lisa Belgam White 2021</footer>
+      <footer className="cntr-footer">Copyright © Job Seeker Safe 2021</footer>
     </>
   );
 };
