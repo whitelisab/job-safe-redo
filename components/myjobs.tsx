@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
 import { Container, Table, Row, Col } from 'react-bootstrap';
-import sampleData, { Jobs } from '../sampleData';
+import { Jobs } from '../sampleData';
 import JobItem from './jobitem';
 
-const MyJobs = () => {
-  const [jobs, setJobs] = useState<Jobs>(sampleData);
-
+const MyJobs = ({ jobs }: { jobs: Jobs }) => {
   return (
     <Container className="mt-5">
       <Row className="my-3">
